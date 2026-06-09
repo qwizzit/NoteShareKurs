@@ -25,7 +25,7 @@
      ```
    * Создайте виртуальное окружение:
      ```bash
-     python -m venv venv
+     py -m venv venv
      ```
    * Активируйте окружение и установите зависимости:
      * *Windows (PowerShell):*
