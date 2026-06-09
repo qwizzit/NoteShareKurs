@@ -1,0 +1,39 @@
+[data-theme="dark"] {
+  --color-bg-main: 15, 15, 15;
+  --color-bg-secondary: 33, 33, 33;
+
+  --color-scroll-bar-main: 55, 55, 55;
+  --color-scroll-bar-secondary: 28, 28, 28;
+
+  --color-active-item: 40, 40, 40;
+
+  --color-short-style-notes: 50, 50, 50;
+
+  --color-btn: 0, 39, 200;
+  --color-disabled-btn: 57, 57, 57;
+
+  --color-border: 60, 60, 60;
+
+  --color-svg: 200, 200, 200;
+  --color-font: 200, 200, 200;
+}
+
+[data-theme="light"] {
+  --color-bg-main: 240, 240, 240;
+  --color-bg-secondary: 222, 222, 222;
+
+  --color-scroll-bar-main: 144, 144, 144;
+  --color-scroll-bar-secondary: 210, 210, 210;
+
+  --color-active-item: 215, 215, 215;
+
+  --color-short-style-notes: 200, 200, 200;
+
+  --color-btn: 36 83 255;
+
+  --color-border: 195, 195, 195;
+
+  --color-svg: 55, 55, 55;
+  --color-font: 50, 50, 50;
+}
+
