@@ -1,0 +1,4 @@
+:root {
+  --border-side: var(--size-divider) solid rgb(var(--color-border));
+  --border-side-btn: calc(var(--size-divider) + 1px) solid rgb(var(--color-btn));
+}

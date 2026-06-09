@@ -1,0 +1,41 @@
+* {
+  scrollbar-color: rgb(var(--color-scroll-bar-main)) rgb(var(--color-scroll-bar-secondary));
+
+}
+
+html {
+  background-color: rgb(var(--color-bg-main));
+  margin: 0 auto;
+  padding: unset;
+  overflow: hidden;
+  width: 100svw;
+  height: 100svh;
+}
+
+body {
+  margin: unset;
+  color: rgb(var(--color-font));
+  font-family: 'JetBrains Mono', monospace;
+}
+
+button,
+input,
+select,
+textarea,
+li {
+  color: rgb(var(--color-font));
+  font-family: JetBrains Mono, monospace;
+}
+
+hr {
+  width: 100%;
+  border: 1px solid rgb(var(--color-bg-secondary));
+}
+
+#app {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 100svw;
+  height: 100svh;
+}
