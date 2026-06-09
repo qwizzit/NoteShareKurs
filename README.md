@@ -15,7 +15,7 @@
 
 1. **Клонируйте репозиторий:**
    ```bash
-   git clone [https://github.com/qwizzit/simple-note](https://github.com/qwizzit/simple-note)
+   git clone https://github.com/qwizzit/simple-note
    cd online-notes
 
 2. **Настройте бэкэнд (FastAPI):**
