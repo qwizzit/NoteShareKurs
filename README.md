@@ -28,11 +28,16 @@
      py -m venv venv
      ```
    * Активируйте окружение и установите зависимости:
-     * *Windows (PowerShell):*
+     * **Способ 1 (через обычную Командную строку Windows - CMD):**
+       ```cmd
+       .\venv\Scripts\activate.bat
+       pip install -r requirements.txt
+       ```
+     * **Способ 2 (через PowerShell):**
+       Если при выполнении скрипта возникает ошибка безопасности `PSSecurityException`, сначала снимите ограничение, а затем активируйте окружение:
        ```powershell
+       Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
        .\venv\Scripts\Activate.ps1
-        ```
-       ```powershell
        pip install -r requirements.txt
        ```
    * Создайте файл `.env` в папке `backend/` и заполните обязательные ключи конфигурации (`recaptcha_secret_key`, `mail_password` и др.).
