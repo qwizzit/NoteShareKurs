@@ -31,6 +31,8 @@
      * *Windows (PowerShell):*
        ```powershell
        .\venv\Scripts\Activate.ps1
+        ```
+       ```powershell
        pip install -r requirements.txt
        ```
    * Создайте файл `.env` в папке `backend/` и заполните обязательные ключи конфигурации (`recaptcha_secret_key`, `mail_password` и др.).
