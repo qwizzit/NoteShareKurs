@@ -3,16 +3,29 @@ import BtnWrapper from "@src/components/wrappers/BtnWrapper.vue";
 import closeWindow from '@src/assets/icons/close.svg'
 import ModalWrapper from "@src/components/wrappers/ModalWrapper.vue";
 import type { Note } from "@src/models/Note.ts";
-import { ref } from "vue";
-
+import { computed } from "vue";
 const emit = defineEmits<{
   (e: 'close'): void;
 }>();
+
 const props = defineProps<{
   note: Note
-}>()
-const countWords = ref(props.note.content.trim().split(/\s+/).length);
-const countSymbols = ref(props.note.content.trim().length);
+}>();
+
+const getPlainText = () => {
+  const htmlContent = props.note.content || '';
+  const doc = new DOMParser().parseFromString(htmlContent, 'text/html');
+  return doc.body.textContent?.trim() || '';
+};
+
+const countSymbols = computed(() => {
+  return getPlainText().length;
+});
+
+const countWords = computed(() => {
+  const text = getPlainText();
+  return text === '' ? 0 : text.split(/\s+/).length;
+});
 </script>
 
 <template>
